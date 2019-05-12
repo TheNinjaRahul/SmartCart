@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ParleG",
+    "category": "C",
+    "price": "10.00"
+  },
+  {
+    "name":"Wheat",
+    "category":"C",
+    "price":"50.00"
+  },
+  {
+    "name":"Mobile Cover",
+    "category":"A",
+    "price":"100.00"
+  },
+  {
+    "name":"Earphone",
+    "category":"A",
+    "price":"500.00"
+  },
+  {
+    "name":"Oil",
+    "category":"B",
+    "price":"200.00"
+  },
+  {
+    "name":"Milk",
+    "category":"B",
+    "price":"25.00"
+  },
+  {
+    "name":"ToothPaste",
+    "category":"B",
+    "price":"120.00"
+  }
+]
