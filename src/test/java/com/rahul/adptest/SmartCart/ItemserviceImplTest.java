@@ -49,4 +49,24 @@ public class ItemserviceImplTest {
         Assert.assertEquals(new BigDecimal("1540.00"),finalBill.getToalPrice());
     }
 
+
+    @Test
+    public void addItemTest(){
+        Item item=new Item("1","ParleG",new BigDecimal("200.00"), Category.C);
+        Mockito.when(itemRepository.insert(item)).thenReturn(item);
+        itemService.addItem(item);
+    }
+
+    @Test
+    public void getItemByIdTest(){
+        Item item=new Item("1","ParleG",new BigDecimal("200.00"), Category.C);
+        Mockito.when(itemRepository.findById("1")).thenReturn(java.util.Optional.ofNullable(item));
+        Item newone=itemService.getItemById("1");
+        Assert.assertEquals(newone.getId(),item.getId());
+        Assert.assertEquals(newone.getPrice(),item.getPrice());
+        Assert.assertEquals(newone.getName(),item.getName());
+
+
+    }
+
 }
